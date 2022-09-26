@@ -88,63 +88,24 @@ plt.scatter(x,y)
 
 ## Задание 3
 ### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+Величина loss должна стремиться к нулю.
+![изображение](https://user-images.githubusercontent.com/38161044/192311299-d4ee0cee-002b-44b0-b19a-c2c38e0c98e4.png)
+![изображение](https://user-images.githubusercontent.com/38161044/192311315-60af2c98-1d51-4e18-8028-572a3d86b8d8.png)
+![изображение](https://user-images.githubusercontent.com/38161044/192312955-868ea81c-cf24-48c5-82a4-7007b08ffa4d.png)
+![изображение](https://user-images.githubusercontent.com/38161044/192312998-b3602ea1-517a-4914-86c0-2a0e88515548.png)
+![изображение](https://user-images.githubusercontent.com/38161044/192313767-0457c613-a3f3-4dff-b5ab-ccce2c21275f.png)
+![изображение](https://user-images.githubusercontent.com/38161044/192313807-8d879751-91fd-4de4-9f6c-b7ec02a031e0.png)
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
-
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
-
-## Задание 3
 ### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
-
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
-
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
+Lr - угловой коэффициент прямой. 
+Lr = 0.00009
+![изображение](https://user-images.githubusercontent.com/38161044/192316045-cc7a2fc7-cf83-49f0-8d42-14d4a5ddb816.png)
+Lr = 0.000027
+![изображение](https://user-images.githubusercontent.com/38161044/192316192-cadea826-f0d8-46c9-9e42-24f31d295476.png)
 
 ## Выводы
 
-Абзац умных слов о том, что было сделано и что было узнано.
+Ознакомился с основными операторами зыка Python на примере реализации линейной регрессии и написал программы Hello World на Python и Unity.
 
 | Plugin | README |
 | ------ | ------ |
