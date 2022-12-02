@@ -61,6 +61,7 @@
 
 
 Увеличил epsilon до 0,3. Он влияет на то, насколько быстро политика может развиваться во время обучения. Соответствует допустимому порогу расхождения между старой и новой политикой при обновлении градиентного спуска. По итогу обучение происходит быстрее, но стабильность падает.
+
 ![изображение](https://user-images.githubusercontent.com/38161044/205350551-78fa76aa-bf34-4c1f-b646-aa9eb9ed39fb.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205350581-f60da170-7306-4a19-bb3a-ea72b9b57eba.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205350597-d4eb554f-c786-489b-9830-acafb1cdb118.png)
@@ -74,6 +75,7 @@
 
 
 Увеличил num_epoch до 10 - количество эпох обучения. Чем больше значение, тем график становится все более нестабильным. 
+
 ![изображение](https://user-images.githubusercontent.com/38161044/205350944-137de63d-6e5c-4d33-bd0b-ebf3d784eb66.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205350963-c5e29e60-ede7-4bc7-9c7a-9f5a14cf3d9d.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205350998-ce9bbb79-4bfa-4fde-a9a1-d25de6e5da59.png)
@@ -87,6 +89,7 @@
 
 
 Уменишил beta до 1.0e-4 - Сила энтропийной регуляризации, которая делает политику «более случайной». Чем меньше параметр, тем меньше действий совершают агенты.
+
 ![изображение](https://user-images.githubusercontent.com/38161044/205351222-a148c36c-b928-4a83-9350-c2e6167688dc.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205351246-2be425a8-a922-4737-8121-c53ba8e2f1f0.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205351282-47632879-eb16-49cc-af34-1d56ffe51dea.png)
@@ -100,6 +103,7 @@
 
 Уменьшил Labmd до 0.7 - Параметр регуляризации (лямбда), используемый при расчете обобщенной оценки преимущества. Чем выше значение, тем меньше полагается на себя.
 В моем случае привело к уменьшению эффективности.
+
 ![изображение](https://user-images.githubusercontent.com/38161044/205351475-e61fbdc8-b5db-47ef-95c1-8cde937608cc.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205351492-6b4de559-b7b6-4582-a6ae-02d5bc169688.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205351517-41336786-7df5-4a80-97d8-4bde60e6c623.png)
