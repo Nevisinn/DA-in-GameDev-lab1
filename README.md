@@ -52,12 +52,6 @@
 ![изображение](https://user-images.githubusercontent.com/38161044/205341915-75bd0942-84c8-4513-9d3d-93b812e40656.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205341947-b0e629c8-ca46-40b2-9e03-f2ebb1b18561.png)
 ![изображение](https://user-images.githubusercontent.com/38161044/205341964-716b43bb-55df-4f1b-901f-47bf98e1e390.png)
-![изображение](https://user-images.githubusercontent.com/38161044/205341972-1b07c45a-3661-40cc-97e6-856c91e94783.png)
-![изображение](https://user-images.githubusercontent.com/38161044/205341982-ac430b87-e338-4138-87b5-ec1b879ec65d.png)
-![изображение](https://user-images.githubusercontent.com/38161044/205341996-7fef4c0c-7ebc-415c-a15a-e5fb0773d239.png)
-![изображение](https://user-images.githubusercontent.com/38161044/205342009-55f4ffb4-4251-499b-8971-f80ba97d4c8d.png)
-![изображение](https://user-images.githubusercontent.com/38161044/205342020-00cde763-c0ba-45e6-8bd4-35d424a91f36.png)
-![изображение](https://user-images.githubusercontent.com/38161044/205342029-52947700-4576-427b-9d20-71a6fbeba860.png)
 
 Увеличил epsilon до 0,3. Он влияет на то, насколько быстро политика может развиваться во время обучения. Соответствует допустимому порогу расхождения между старой и новой политикой при обновлении градиентного спуска. По итогу обучение происходит быстрее, но стабильность падает.
 ![изображение](https://user-images.githubusercontent.com/38161044/205342394-be8e0c11-7402-4ef1-b3ce-4060e98a0a1d.png)
